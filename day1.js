@@ -64,7 +64,36 @@ const constVar = "Hello World!";
 console.log(constVar); // output is Hello World!
 
 // try to change the value of constVar
-constVar = "Rajveer"
-console.log(constVar);
+// constVar = "Rajveer"
+// console.log(constVar);
 // this will throw an error as constVar is declared as const and can't be reassigned
 
+
+
+
+
+// Feature request
+// write a scipt that declare variables of different data types and logs both the value and type of each variable to console
+
+let num3 = 10;
+console.log(`Value: ${num3}, Type: ${typeof num3}`); // output is Value: 10, Type: number
+
+let str2 = "Hello World!";
+console.log(`Value: ${str2}, Type: ${typeof str2}`); // output is Value: Hello World!, Type: string
+
+
+
+
+// create a script that demonstrates the difference in behaviour between let and const when it come to reassignment
+
+let letVar = "Hello World!";
+console.log(`Initial value: ${letVar}, Type: ${typeof letVar}`); // output is Initial value: Hello World!, Type: string
+
+letVar = "Rajveer";
+console.log(`New value: ${letVar}, Type: ${typeof letVar}`); // output is New value: Rajveer, Type: string
+
+const constVar2 = "Hello World!";
+console.log(`Initial value: ${constVar2}, Type: ${typeof constVar2}`);
+// try to change the value of constVar2
+// constVar2 = "Rajveer"
+// this will throw and error 
